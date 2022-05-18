@@ -8,6 +8,14 @@ import Link from "next/link";
 // import { store } from "../redux/store";
 
 
+const arr = [
+    'shoaib',
+    'royal',
+    'sameer'
+]
+
+
+
 export function Navbar() {
     var [siderBool, setSiderBool] = useState(false)
     var [ProdCount, setProdCount] = useState(0);
@@ -34,10 +42,28 @@ export function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0 mt-2">
                         <li className="nav-item">
-                            <p className="nav-link text-black h6 ms-2" aria-current="page" >Shop</p>
+                            {
+                                arr.map(name => {
+                                    return (
+                                        <ul className='ms-4'>
+                                            <Link href={`/shop?name=${name}`}>
+                                                <a>
+                                                    {name}
+                                                </a>
+                                            </Link>
+                                        </ul>
+                                    )
+                                })
+                            }
                         </li>
                         <li className="nav-item">
-                            <p className="nav-link text-black h6 ms-2">More</p>
+                            <Link href={`/cart/cart`}>
+                                <a>
+                                    <p className="nav-link text-black h6 ms-2">
+                                        More
+                                    </p>
+                                </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <p className="nav-link text-black h6 ms-2">Collections</p>
@@ -51,17 +77,17 @@ export function Navbar() {
                     </div>
                     <img src={user.src} className={`${style.navImg}`} alt="cart img" />
                 </div>
-                
-                    {/* (siderBool) &&
+
+                {/* (siderBool) &&
                     <SideBaar data={[]} func={() => { setSiderBool(false) }} /> */}
-                
+
             </div>
         </nav>
     )
 }
 
-function mySrc(){
-    return __dirname+'../../img/navbar/cart.png'
+function mySrc() {
+    return __dirname + '../../img/navbar/cart.png'
 }
 
 function SideBaar(props) {

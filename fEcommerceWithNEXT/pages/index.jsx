@@ -5,6 +5,7 @@ import { Navbar } from '../components/common/navbar'
 import { TopSellerComp } from '../components/home/topSeller'
 
 
+
 export default function Home() {
     return (
         <>

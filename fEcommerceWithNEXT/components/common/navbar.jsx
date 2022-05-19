@@ -42,19 +42,15 @@ export function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto ms-auto mb-2 mb-lg-0 mt-2">
                         <li className="nav-item">
-                            {
-                                arr.map(name => {
-                                    return (
-                                        <ul className='ms-4'>
-                                            <Link href={`/shop?name=${name}`}>
-                                                <a>
-                                                    {name}
-                                                </a>
-                                            </Link>
-                                        </ul>
-                                    )
-                                })
-                            }
+
+
+
+                            <Link href={`/shop`}>
+                                <a>
+                                    {`shop`}
+                                </a>
+                            </Link>
+
                         </li>
                         <li className="nav-item">
                             <Link href={`/cart/cart`}>

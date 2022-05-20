@@ -2,41 +2,25 @@ import { useEffect, useState } from "react"
 // import { dataFetch } from "../FetchRecords"
 // import { Add } from "../redux/reducers/cartReducer";
 // import { status, topSeller } from "../redux/reducers/productsReducer"
-// import { store } from "../redux/store"
+import { store } from "../../redux/store";
+import { topSeller } from "../../redux/reducers/productsReducer";
+import style from "../../styles/index.module.css"
+
+
 
 export function TopSellerComp() {
-    var [data, dataFunc] = useState([]);
-    var cashe;
-    useEffect(() => {
-        // dataFetch(
-        //     {
-        //         url: 'http://localhost:8000/stock/headphone',
-        //         action: topSeller,
-        //         know: 'topSeller',
-        //         err: () => { alert('You got an error while fetching records') }
-        //     }
-        // )
-        // store.subscribe(() => {
-        //     const Products = store.getState().prod.topSeller.data;
-        //     if (Products !== cashe) {
-        //         cashe = Products
-        //         dataFunc(Products)
-        //     }
-        // })
-    }, [])
+    const data = store.getState().prod
     return (
         <div className="container text-center mt-5 mb-5">
             <h1 className="display-4 fw-bold">Top Sellers</h1>
             <div className="row row-cols-lg-4 row-cols-2 mt-5">
-                {/* <TopCol data={data} /> */}
+                <TopCol data={data} />
             </div>
         </div>
     )
 }
 
 function TopCol(prop) {
-    var cashe;
-
     function Set(get) {
         var [opac, opacFunc] = useState({ first: 'show', sec: 'hide' });
         var [chk, chkFunc] = useState(false)
@@ -49,9 +33,9 @@ function TopCol(prop) {
             }
         }
         // useEffect(() => {
-        store.subscribe(() => {
-            chkFunc(false);
-        })
+        // store.subscribe(() => {
+        //     chkFunc(false);
+        // })
         // }, [])
         return (
 
@@ -117,7 +101,7 @@ function Template(get) {
             ...get
         }
         ProdAdd.quant = count
-        store.dispatch(Add(ProdAdd))
+        // store.dispatch(Add(ProdAdd))
     }
     return (
         <div className="container-fluid py-4">

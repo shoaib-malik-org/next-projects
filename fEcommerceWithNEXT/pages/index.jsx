@@ -1,18 +1,30 @@
-import Head from 'next/head'
-import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/common/navbar'
 import { TopSellerComp } from '../components/home/topSeller'
 
+import Head from 'next/head'
+import { store } from '../redux/store'
+import { addProdReducer } from '../redux/reducers/productsReducer'
+
+export async function getStaticProps() {
+    const res = await fetch('http://localhost:8000/stock')
+    const data = await res.json()
+    return {
+        props: {
+            data,
+        },
+    }
+}
 
 
-export default function Home() {
+export default function ({ data }) {
+    store.dispatch(addProdReducer(data))
     return (
         <>
             <Head>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-                <title>shIp</title>
             </Head>
             <Navbar />
             <Top />

@@ -11,6 +11,7 @@ export async function getServerSideProps() {
     // Fetch data from external API
     const res = await fetch(`http://localhost:8000/stock`)
     const data = await res.json()
+    // var data;
   
     // Pass data to the page via props
     return { props: { data } }
@@ -22,8 +23,8 @@ export default function home({ data }) {
     return (
         <>
             <Head>
-                {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" /> */}
-                {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> */}
+                
+               
             </Head>
             <Navbar />
             <Top />

@@ -18,3 +18,19 @@ a {
 .btn:hover{
   border: 1px solid #66a3bf;
 }
+
+.text-blue{
+  color: #66a3bf;
+}
+
+.text-sm{
+ font-size: 15px;
+}
+
+.text-sans{
+  font-family: sans-serif;
+}
+
+.center{
+  margin: 0 auto;
+}

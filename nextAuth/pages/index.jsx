@@ -4,11 +4,15 @@ import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/common/navbar'
 import { TopSellerComp } from '../components/home/topSeller'
 import { useSession, signIn, signOut } from "next-auth/react"
-
+import { getSession } from 'next-auth/react'
+import { useEffect } from 'react'
 
 
 export default function Home() {
     const { data, status } = useSession()
+    useEffect(() => {
+        getSession().then((res)=> console.log(res))
+    }, [])
     if (status !== 'authenticated') {
         return <>
             Not signed in <br />

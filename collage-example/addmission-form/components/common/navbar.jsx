@@ -35,7 +35,7 @@ export function Navbar() {
                     </ul>
                     <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
                         <li className={`nav-item border-end ${style.borderBlue}`}>
-                            <Link href={`/auth/login`}>
+                            <Link href={`/auth/signIn`}>
                                 <a className="nav-link text-light">Sign in</a>
                             </Link>
                         </li>

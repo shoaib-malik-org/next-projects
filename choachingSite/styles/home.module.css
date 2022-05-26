@@ -1,0 +1,58 @@
+.Rounded10 {
+    border-radius: 10px;
+}
+
+.btnBlue {
+    color: rgb(95, 119, 130);
+}
+
+.focus {
+    color: #66a3bf !important;
+    border-bottom: 2px solid #66a3bf !important;
+}
+
+.overflow {
+    overflow: clip !important;
+}
+
+.htMd {
+    height: 75vh;
+}
+
+.bgHome {
+    background-image: url('../imgs/home.jpg');
+}
+
+.bgHome,.bgCont,.bgSubs{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgHome::before, .bgCont::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.CarouselStart {
+    padding-right: 4px;
+    left: -30px;
+}
+
+.CarouselEnd {
+    padding-left: 4px;
+    right: -30px;
+}
+
+.CarouselEnd,
+.CarouselStart {
+    height: 50px;
+    width: 50px;
+    
+    background-color: black;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+}

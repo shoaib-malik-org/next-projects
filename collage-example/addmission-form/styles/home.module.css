@@ -4,9 +4,6 @@
 .btnBlue{
     color: rgb(95, 119, 130);
 }
-.Rounded10 button:focus{
-    
-}
 .focus{
     color: #66a3bf !important;
     border-bottom: 2px solid #66a3bf !important;

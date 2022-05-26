@@ -17,6 +17,7 @@ a {
 
 .btn:hover{
   border: 1px solid #66a3bf;
+  color: #66a3bf !important;
 }
 
 .text-blue{
@@ -27,10 +28,57 @@ a {
  font-size: 15px;
 }
 
+.text-xs{
+  font-size: 13px;
+}
+
 .text-sans{
   font-family: sans-serif;
 }
 
 .center{
   margin: 0 auto;
+}
+
+.mt-xxl{
+  margin-top: 20vh;
+}
+
+.mt-xl{
+  margin-top: 15vh;
+}
+
+.mt-lg{
+  margin-top: 10vh;
+}
+
+.mt-md{
+  margin-top: 5vh;
+}
+
+.h-full{
+  height: 100vh;
+}
+
+.center-both{
+  padding: 100%;
+}
+
+.btn-blue{
+  background-color: #66a3bf;
+  color: white !important;
+  border: #5391ae 1px solid;
+}
+
+.btn-blue:hover,.btn-blue:focus{
+  background-color: #55879d !important;
+  color: white !important;
+  border: #5391ae 1px solid;
+}
+
+.circle{
+  height: 23px;
+  width: 25px;
+  text-align: center;
+  padding: 6px 0 !important;
 }

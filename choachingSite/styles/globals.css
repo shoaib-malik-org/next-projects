@@ -1,0 +1,115 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-blue {
+  color: #66a3bf;
+}
+
+.text-sm {
+  font-size: 15px;
+}
+
+.text-xs {
+  font-size: 13px;
+}
+
+.text-sans {
+  font-family: sans-serif;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.mt-xxl {
+  margin-top: 40vh;
+}
+
+.mt-xl {
+  margin-top: 30vh;
+}
+
+.mt-lg {
+  margin-top: 20vh;
+}
+
+.h-full {
+  height: 100vh;
+}
+
+.center-both {
+  padding: 100%;
+}
+
+.btn-blue {
+  background-color: #0096db !important;
+  color: white !important;
+  border: #0096db 1px solid !important;
+}
+
+.btn-blue:hover {
+  background-color: #006fa2 !important;
+  color: white !important;
+  border: #006fa2 1px solid;
+}
+
+.circle {
+  height: 23px;
+  width: 25px;
+  text-align: center;
+  padding: 6px 0 !important;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.border-grey {
+  border-color: rgb(177, 177, 177) !important;
+}
+
+.top-neg {
+  top: -30px;
+}
+
+.text-serif {
+  font-family: 'Tiro Bangla', serif;
+}
+
+.text-dgrey {
+  color: rgb(192, 192, 192);
+}
+
+.hr {
+  width: 50px;
+  height: 1.5px;
+  background-color: black;
+  opacity: .7;
+}
+
+.text-blue {
+  color: #0096db !important;
+}
+
+.bg-blue{
+  background-color: #006fa2 !important;
+}
+
+.hr-sm{
+  height: 1px !important;
+  opacity: 0.1;
+}

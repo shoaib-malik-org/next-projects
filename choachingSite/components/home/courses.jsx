@@ -78,11 +78,11 @@ export function Courses() {
                 </div>
                 <div className={`${style.Carousel} position-absolute`}>
                     <button className={`${style.CarouselStart} me-2`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <i class="fa-solid fa-angle-left "></i>
+                        <i className="fa-solid fa-angle-left "></i>
                         
                     </button>
                     <button className={`${style.CarouselEnd}`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i class="fa-solid fa-angle-right"></i>
+                        <i className="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
             </div>

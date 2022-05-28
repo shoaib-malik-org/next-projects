@@ -6,11 +6,6 @@
     color: rgb(95, 119, 130);
 }
 
-.focus {
-    color: #66a3bf !important;
-    border-bottom: 2px solid #66a3bf !important;
-}
-
 .overflow {
     overflow: clip !important;
 }
@@ -23,36 +18,38 @@
     background-image: url('../imgs/home.jpg');
 }
 
-.bgHome,.bgCont,.bgSubs{
+.bgHome,
+.bgCont,
+.bgSubs {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bgHome::before, .bgCont::before {
+.bgHome::before,
+.bgCont::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.CarouselStart {
-    padding-right: 4px;
-    left: -30px;
-}
-
-.CarouselEnd {
-    padding-left: 4px;
-    right: -30px;
-}
-
 .CarouselEnd,
 .CarouselStart {
-    height: 50px;
-    width: 50px;
-    
-    background-color: black;
-    border-radius: 100px;
-    position: absolute;
-    top: 50%;
+    height: 30px;
+    width: 30px;
+    color: black;
+    border: 1px solid black;
+    background: none;
+}
+
+.CarouselEnd:hover,
+.CarouselStart:hover {
+    border: 1px #0096db solid !important;
+    color: #0096db;
+}
+
+.Carousel {
+    top: -70px;
+    right: 0px;
 }

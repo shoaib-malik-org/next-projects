@@ -39,17 +39,17 @@ export function Contact() {
                     <div className="col py-3">
                         <Link href="tel:+91 ">
                             <a>
-                                <i class="fa-solid fa-location-dot fa-xl text-blue"></i>
+                                <i className="fa-solid fa-location-dot fa-xl text-blue"></i>
                                 <h5 className="d-inline text-sans fw-bold ms-3">Address</h5>
                             </a>
                         </Link>
                         <p className="ms-4 ps-2 my-2 text-secondary">shaheen bagh okhla new delhi</p>
                     </div>
                     <hr className="hr-sm" />
-                    <i class="fa-brands fa-facebook-square fa-lg"></i>
-                    <i class="fa-brands fa-twitter fa-lg ms-3"></i>
-                    <i class="fa-brands fa-github fa-lg ms-3"></i>
-                    <i class="fa-brands fa-instagram fa-lg ms-3"></i>
+                    <i className="fa-brands fa-facebook-square fa-lg"></i>
+                    <i className="fa-brands fa-twitter fa-lg ms-3"></i>
+                    <i className="fa-brands fa-github fa-lg ms-3"></i>
+                    <i className="fa-brands fa-instagram fa-lg ms-3"></i>
                 </div>
                 <div className="col">
                     <h2 className="text-serif fw-bold text-uppercase">send a message</h2>

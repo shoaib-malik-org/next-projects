@@ -19,9 +19,9 @@ export default function Home() {
         <Top />
       </div>
       <Courses />
-      <Contact />
-      <div className={`w-100 py-2 bg-blue`}></div>
       <Carousel />
+      <div className={`w-100 py-2 bg-blue mt-5`}></div>
+      <Contact />
       <Subscribe />
       {/* <Footer /> */}
     </>

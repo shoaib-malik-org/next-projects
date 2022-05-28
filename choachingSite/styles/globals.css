@@ -51,6 +51,10 @@ a {
   height: 100vh;
 }
 
+.h-smpx{
+  height: 200px;
+}
+
 .center-both {
   padding: 100%;
 }

@@ -7,7 +7,10 @@ import fullStack from '../../imgs/course/fullStack.png'
 import front from '../../imgs/course/frontend.png'
 import back from '../../imgs/course/backend.png'
 import style from '../../styles/home.module.css'
-const course = [
+import Link from "next/link";
+
+
+export const course = [
     {
         src: first.src,
         title: 'From Zero to Hero With Basic Computer',
@@ -37,7 +40,7 @@ const course = [
         price: '6000'
     }
 ]
-const course2 = [
+export const course2 = [
     {
         src: back.src,
         title: 'Complete Backend Programming',
@@ -55,7 +58,7 @@ export function Courses() {
         <div className="container my-5 pt-5">
             <h1 className="text-serif fw-bold text-uppercase">popular courses</h1>
             <hr className="hr mb-5" />
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-interval="false">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="row row-cols-4">
@@ -71,16 +74,17 @@ export function Courses() {
                             }
                         </div>
                     </div>
-                    
+
                 </div>
-                <button className={`carousel-control-prev ${style.CarouselStart}`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className={`carousel-control-next ${style.CarouselEnd}`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+                <div className={`${style.Carousel} position-absolute`}>
+                    <button className={`${style.CarouselStart} me-2`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <i class="fa-solid fa-angle-left "></i>
+                        
+                    </button>
+                    <button className={`${style.CarouselEnd}`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
     )
@@ -88,33 +92,35 @@ export function Courses() {
 
 function Col(props) {
     return (
-        <div className="col" key={props.src}>
-            <div className="card h-100">
-                <Image
-                    src={props.src}
-                    height={'200px'}
-                    width={'300px'}
-                />
-                <div className="card-body">
-                    <h6 className="card-title text-sans fw-bold my-4 col-xl-9 center text-center">
-                        {props.title}
-                    </h6>
-                    <hr />
-                    <div className="text-start">
-                        <span className="text-secondary">
-                            <i className="fa-solid fa-users fa-sm me-1"></i>
-                            {props.std}
-                        </span>
-                        <span className="text-secondary ms-3">
-                            <i className="fa-solid fa-comment fa-sm me-1"></i>
-                            {props.comments}
-                        </span>
-                        <span className="position-absolute end-0 me-3 text-danger fw-bold">
-                            ₹{props.price}
-                        </span>
+        <Link href={`/course/${props.title}`} key={props.src}>
+            <a className="text-dark">
+                <div className="col">
+                    <div className="card h-100">
+                        <Image
+                            src={props.src}
+                            height={'200px'}
+                            width={'300px'}
+                        />
+                        <div className="card-body">
+                            <h6 className="card-title text-sans fw-bold my-4 col-xl-9 center text-center">
+                                {props.title}
+                            </h6>
+                            <hr />
+                            <div className="text-center">
+                                <span className="text-secondary">
+                                    <i className="fa-solid fa-users fa-sm me-1"></i>
+                                    {props.std}
+                                </span>
+                                <span className="text-secondary ms-3">
+                                    <i className="fa-solid fa-comment fa-sm me-1"></i>
+                                    {props.comments}
+                                </span>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </a>
+        </Link>
     )
 }

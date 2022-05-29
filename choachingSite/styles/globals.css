@@ -117,3 +117,12 @@ a {
   height: 1px !important;
   opacity: 0.1;
 }
+
+.c-pointer{
+  cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .soloCourses .h3{
+    font-size: 25px !important;
+  }
+}

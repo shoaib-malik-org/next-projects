@@ -5,10 +5,38 @@
     background-size: cover;
     height: 350px;
 }
-.bgHome::before{
+
+.bgHome::before {
     content: '';
     position: absolute;
     height: 350px;
-    width: 100vw;
+    left: 0px;
+    right: 0px;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bgBlue {
+    background-color: #e4f7ff;
+}
+
+.hrDesign::before {
+    content: '';
+    position: absolute;
+    inset: 48px 14px;
+    border-top: 1px solid rgb(205, 205, 205);
+}
+
+.hrDesign::after {
+    content: '';
+    position: absolute;
+    inset: 48px 90% 48px 14px;
+    border-top: 1px solid #0096db;
+}
+
+.listStyle {
+    list-style-type: none;
+}
+.borderBlue{
+    border-color: #0096db !important;
+    transition: .3s;
 }

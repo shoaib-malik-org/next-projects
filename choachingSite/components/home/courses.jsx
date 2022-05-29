@@ -23,7 +23,7 @@ export const course = [
         title: 'Learn Python, C, C++, Each',
         std: '20',
         comments: '2',
-        price: '4000'
+        price: '6000'
     },
     {
         src: fullStack.src,
@@ -78,11 +78,11 @@ export function Courses() {
                 </div>
                 <div className={`${style.Carousel} position-absolute`}>
                     <button className={`${style.CarouselStart} me-2`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <i className="fa-solid fa-angle-left "></i>
+                        <i class="fa-solid fa-angle-left "></i>
                         
                     </button>
                     <button className={`${style.CarouselEnd}`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i className="fa-solid fa-angle-right"></i>
+                        <i class="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
             </div>

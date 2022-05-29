@@ -6,7 +6,7 @@ import logo from '../../imgs/choachingLogo.png'
 
 export function Navbar() {
     return (
-        <nav className='position-absolute w-100'>
+        <nav className='w-100 position-absolute' style={{zIndex:'10000'}}>
             <nav className='navbar navbar-expand-lg w-100 z-10 border-bottom border-grey'>
                 <div className='container w-100'>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
@@ -32,8 +32,8 @@ export function Navbar() {
             <nav className={`navbar navbar-expand-lg w-100 z-10 navbar-dark`}>
                 <div className="container">
                     <Link href={'/'}>
-                        <a className="navbar-brand">
-                            <Image src={logo.src} height={'50px'} width={'50px'} className={`bg-light rounded-circle`} />
+                        <a className="navbar-brand c-pointer">
+                            <Image alt='choaching logo' src={logo.src} height={'48px'} width={'48px'} className={`bg-light rounded-circle`} />
                             <span className='text-light fw-bold ms-2 position-relative top-neg'>Inter Alia
                                 <p className='position-relative' style={{top:"-7px",left:'57px'}}>Technologies</p>
                             </span>
@@ -43,10 +43,15 @@ export function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 position-relative text-sans top-neg">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 position-relative text-sans top-neg z-10">
                             <li className={`nav-item`}>
                                 <Link href={`/`}>
-                                    <a className={`nav-link text-light me-4`} aria-current="page">Home</a>
+                                    <a className={`nav-link text-light me-4 position-relative`} style={{zIndex:'1000'}} aria-current="page">Home</a>
+                                </Link>
+                            </li>
+                            <li className={`nav-item`}>
+                                <Link href={`/pages/about`}>
+                                    <a className={`nav-link text-light me-4`} aria-current="page">About</a>
                                 </Link>
                             </li>
                             <li className={`nav-item`}>

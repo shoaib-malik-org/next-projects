@@ -55,7 +55,7 @@ export const course2 = [
 
 export function Courses() {
     return (
-        <div className="container my-5 pt-5">
+        <div className="container my-5 pt-5" id="courses">
             <h1 className="text-serif fw-bold text-uppercase">popular courses</h1>
             <hr className="hr mb-5" />
             <div id="carouselExampleControls" className="carousel slide" data-bs-interval="false">
@@ -78,11 +78,11 @@ export function Courses() {
                 </div>
                 <div className={`${style.Carousel} position-absolute`}>
                     <button className={`${style.CarouselStart} me-2`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <i class="fa-solid fa-angle-left "></i>
+                        <i className="fa-solid fa-angle-left "></i>
                         
                     </button>
                     <button className={`${style.CarouselEnd}`} type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <i class="fa-solid fa-angle-right"></i>
+                        <i className="fa-solid fa-angle-right"></i>
                     </button>
                 </div>
             </div>

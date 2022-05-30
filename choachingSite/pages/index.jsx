@@ -6,8 +6,9 @@ import { Courses } from '../components/home/courses'
 import { Top } from '../components/home/top'
 import { Contact } from '../components/home/Contact'
 import style from '../styles/home.module.css'
-import { Carousel } from '../components/home/carousel'
+import { Carousel } from '../components/home/testimonial'
 import { Subscribe } from '../components/home/subscribe'
+import { About } from '../components/home/about'
 
 
 
@@ -19,8 +20,8 @@ export default function Home() {
         <Top />
       </div>
       <Courses />
+      <About />
       <Carousel />
-      <div className={`w-100 py-2 bg-blue mt-5`}></div>
       <Contact />
       <Subscribe />
       {/* <Footer /> */}

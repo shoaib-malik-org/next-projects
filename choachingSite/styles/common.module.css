@@ -6,3 +6,9 @@
 .borderBlue {
     border-color: #5391ae !important;
 }
+.textGrey a{
+    color: rgb(235, 235, 235) !important;
+}
+.textDark a,.textDark a:hover{
+    color: rgb(45, 45, 45);
+}

@@ -18,12 +18,23 @@
     background-image: url('../imgs/home.jpg');
 }
 
+.bgTestimonial {
+    background-image: url('../imgs/testimonials-bg.jpg');
+    background-attachment: fixed;
+}
+
 .bgHome,
-.bgCont,
-.bgSubs {
+.bgTestimonial {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.bgTestimonial::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(38, 59, 71, 0.7);
 }
 
 .bgHome::before,
@@ -31,7 +42,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .CarouselEnd,

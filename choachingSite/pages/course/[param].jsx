@@ -65,33 +65,34 @@ export default function Course() {
                     </div>
                 </div>
             </div>
-            <div className='container px-3 my-5'>
-                <h2 className='text-serif '>{data.title}</h2>
+            <div className='container px-3 mb-5'>
+
                 <div className='row'>
-                    <div className='col-7'>
-                        <Image
-                            src={data.src}
-                            height={'600px'}
-                            width={'1000%'}
-                            className={'mt-4 rounded-2 border'}
-                        />
+                    <h2 className='text-serif mt-5'>{data.title}</h2>
+                    <div className='col-7 '>
+                        <div className='col'>
+                            <Image
+                                src={data.src}
+                                height={'600px'}
+                                width={'1000%'}
+                                className={'mt-4 rounded-2 border'}
+                            />
+                        </div>
+                        <div className='col mt-5 position-relative'>
+                            <h2 className={`${style.hrDesign}`}>There are many variations</h2>
+                            <p className='mt-4 fw-normal text-secondary lh-lg'>
+                                Lorem Ipsum available, but the majority have suffered alteration in
+                                some form, by injected humour, or randomised words which don't look
+                                even slightly believable. If you are going to use a passage of Lorem
+                                Ipsum, you need to be sure there isn't anything embarrassing hidden
+                                in the middle of text. All the Lorem Ipsum generators on the Internet
+                                tend to repeat predefined chunks as necessary, making this the first
+                                true generator on the Internet. It uses a dictionary of over 200 Latin words,
+                            </p>
+                        </div>
                     </div>
-                    <div className='col'>
+                    <div className='col-5'>
                         <CourseSider data={data} />
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col-7 mt-5 position-relative'>
-                        <h2 className={`${style.hrDesign}`}>There are many variations</h2>
-                        <p className='mt-4 fw-normal text-secondary lh-lg'>
-                            Lorem Ipsum available, but the majority have suffered alteration in
-                            some form, by injected humour, or randomised words which don't look
-                            even slightly believable. If you are going to use a passage of Lorem
-                            Ipsum, you need to be sure there isn't anything embarrassing hidden
-                            in the middle of text. All the Lorem Ipsum generators on the Internet
-                            tend to repeat predefined chunks as necessary, making this the first
-                            true generator on the Internet. It uses a dictionary of over 200 Latin words,
-                        </p>
                     </div>
                 </div>
                 <Select />
@@ -174,23 +175,23 @@ function CourseSider(props) {
     const { data } = props
     console.log(data)
     return (
-        <div className='row mt-4 text-sans soloCourses'>
-            <div className={`col-6 text-secondary h3 fw-normal ${style.bgBlue} py-2 rounded-2`}>
+        <div className='row pt-4 text-sans soloCourses sticky-top'>
+            <div className={`col-6 text-secondary h3 fw-normal bg-lBlue py-2 rounded-2`}>
                 Trainer
             </div>
-            <div className={`col-6 text-secondary h3 fw-bold ${style.bgBlue} py-2 rounded-2 text-end`}>
+            <div className={`col-6 text-secondary h3 fw-bold bg-lBlue py-2 rounded-2 text-end`}>
                 Mr. Ali Bhai
             </div>
-            <div className={`col-6 text-secondary h3 fw-normal mt-2 ${style.bgBlue} py-2 rounded-2`}>
+            <div className={`col-6 text-secondary h3 fw-normal mt-2 bg-lBlue py-2 rounded-2`}>
                 Course Fee
             </div>
-            <div className={`col-6 text-secondary h3 fw-normal mt-2 ${style.bgBlue} py-2 rounded-2 text-end`}>
+            <div className={`col-6 text-secondary h3 fw-normal mt-2 bg-lBlue py-2 rounded-2 text-end`}>
                 ₹{data.price}
             </div>
-            <div className={`col-6 text-secondary h3 fw-normal mt-2 ${style.bgBlue} py-2 rounded-2`}>
+            <div className={`col-6 text-secondary h3 fw-normal mt-2 bg-lBlue py-2 rounded-2`}>
                 Available Seats
             </div>
-            <div className={`col-6 text-secondary h3 fw-normal mt-2 ${style.bgBlue} py-2 rounded-2 text-end`}>
+            <div className={`col-6 text-secondary h3 fw-normal mt-2 bg-lBlue py-2 rounded-2 text-end`}>
                 10
             </div>
         </div>

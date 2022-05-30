@@ -7,19 +7,19 @@ export function Top() {
     return (
         <div className='container position-relative z-10'>
             <div className='row'>
-                <div className='col-12 mt-xl text-light'>
-                    <h1 className='display-2 fw-bold text-serif'>
+                <div className='col-10 mt-xl text-light'>
+                    <h1 className='display-3 fw-bold text-serif'>
                         The education you want
                     </h1>
-                    <h1 className='display-2  text-serif fw-bold'>
+                    <h1 className='display-3  text-serif fw-bold'>
                         The attention you deserve
                     </h1>
-                    <p className='text-sans text-dgrey w-50 h5'>
+                    <p className='text-sans text-dgrey col-xl-6 col-lg-9 h5'>
                         It is a long established fact that a reader
                         will be distracted by the readable content of
                         a page when looking at its layout.
                     </p>
-                    <button className='btn btn-blue btn-lg'>
+                    <button className='btn btn-blue px-5 py-2 mt-3 rounded-1'>
                         Get started
                     </button>
                 </div>

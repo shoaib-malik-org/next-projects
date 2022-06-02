@@ -1,10 +1,11 @@
 import Link from "next/link"
+import style from '../../styles/home.module.css'
 
 
 
 export function Contact() {
     return (
-        <div className="container my-5 pt-5">
+        <div className="container my-5 pt-5" id="contact">
             <div className="row">
                 <div className="col">
                     <h2 className="text-serif fw-bold text-uppercase">contact info</h2>
@@ -46,12 +47,14 @@ export function Contact() {
                         <p className="ms-4 ps-2 my-2 text-secondary">shaheen bagh okhla new delhi</p>
                     </div>
                     <hr className="hr-sm" />
-                    <i className="fa-brands fa-facebook-square fa-lg"></i>
-                    <i className="fa-brands fa-twitter fa-lg ms-3"></i>
-                    <i className="fa-brands fa-github fa-lg ms-3"></i>
-                    <i className="fa-brands fa-instagram fa-lg ms-3"></i>
+                    <div className={`${style.socialContact}`}>
+                        <i className="fa-brands fa-facebook-square fa-lg"></i>
+                        <i className="fa-brands fa-twitter fa-lg ms-3"></i>
+                        <i className="fa-brands fa-github fa-lg ms-3"></i>
+                        <i className="fa-brands fa-instagram fa-lg ms-3"></i>
+                    </div>
                 </div>
-                <div className="col">
+                <div className={`col ${style.contactInput}`}>
                     <h2 className="text-serif fw-bold text-uppercase">send a message</h2>
                     <p className="text-secondary text-sans text-sm">
                         Your email address will not be published. Required fields are marked.

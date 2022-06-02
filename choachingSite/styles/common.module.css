@@ -6,9 +6,37 @@
 .borderBlue {
     border-color: #5391ae !important;
 }
-.textGrey a{
+
+.textGrey a {
     color: rgb(235, 235, 235) !important;
 }
-.textDark a,.textDark a:hover{
+
+.textDark a,
+.textDark a:hover {
     color: rgb(45, 45, 45);
+}
+
+@media (max-width:991px) {
+
+    .bgMdWhite,
+    .bgMdWhite a {
+        background-color: white;
+        color: black !important;
+        text-align: center;
+        border-radius: 10px;
+    }
+}
+
+.dropDown:hover+div,
+.dropDown+div:hover {
+    display: block;
+}
+
+.dropDown+div {
+    display: none;
+}
+
+.dropDiv, .dropDiv a {
+    top: 40px;
+    color: grey !important;
 }

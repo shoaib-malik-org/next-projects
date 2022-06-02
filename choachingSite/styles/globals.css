@@ -35,12 +35,8 @@ a {
   margin: 0 auto;
 }
 
-.mt-xxl {
-  margin-top: 40vh;
-}
-
 .mt-xl {
-  margin-top: 30vh;
+  margin-top: 180px;
 }
 
 .mt-lg {
@@ -149,4 +145,16 @@ a {
 }
 .mt-10{
   margin-top: 100px;
+}
+
+@media (max-width:991px) {
+  .home_bgHome__pHp_R .display-3 {
+
+    font-size: calc(1.425rem + 2.1vw);
+      font-weight: 300;
+      line-height: 1.2;
+  }
+}
+.text-ldark{
+  color: rgb(61, 61, 61) !important;
 }

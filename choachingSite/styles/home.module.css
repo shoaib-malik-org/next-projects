@@ -18,6 +18,8 @@
     background-image: url('../imgs/home.jpg');
 }
 
+
+
 .bgTestimonial {
     background-image: url('../imgs/testimonials-bg.jpg');
     background-attachment: fixed;
@@ -30,7 +32,7 @@
     background-size: cover;
 }
 
-.bgTestimonial::before{
+.bgTestimonial::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -63,4 +65,18 @@
 .Carousel {
     top: -70px;
     right: 0px;
+}
+
+.socialContact i:hover {
+    color: #0096db;
+}
+
+.contactInput input:focus,
+.contactInput textarea:focus {
+    box-shadow: none !important;
+    border: 1px solid #0096db;
+}
+
+.contactInput textarea {
+    resize: none;
 }

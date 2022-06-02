@@ -8,7 +8,7 @@ import news from '../../imgs/about/news.jpg'
 const data = [
     {
         h1: 'about us',
-        head: 'Choaching History',
+        head: 'Coaching History',
         p1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis' +
             'repellat maxime, adipisci non ipsam at itaque rerum vitae, necessitatibus nulla' +
             'animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti,',
@@ -72,15 +72,15 @@ function ColImg({ put }) {
 
 function ColText({ put, className }) {
     return (
-        <div className={`col-6 mt-10 ${className}`}>
+        <div className={`col-6 mt-5 pt-4 ${className}`}>
             <p className="text-uppercase text-secondary text-ms text-sans mt-5">{put.h1}</p>
             <h1 className="display-5 text-serif ">
                 {put.head}
             </h1>
-            <p className="text-serif text-sm mt-4 text-muted">
+            <p className="text-serif text-xs mt-4 text-muted">
                 {put.p1}
             </p>
-            <p className="text-serif text-sm mt-4 text-muted">
+            <p className="text-serif text-xs mt-4 text-muted">
                 {put.p2}
             </p>
         </div>

@@ -5,7 +5,7 @@ import style from '../../styles/home.module.css'
 
 export function Top() {
     return (
-        <div className='container position-relative z-10'>
+        <div className='container position-relative z-10 pt-lg-0 pt-4'>
             <div className='row'>
                 <div className='col-10 mt-xl text-light'>
                     <h1 className='display-3 fw-bold text-serif'>

@@ -15,16 +15,18 @@ import { About } from '../components/home/about'
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <div className={`container-fluid ${style.bgHome} h-full position-relative`}>
+
+      <div className={`container-fluid ${style.bgHome} h-full`}>
+        <Navbar />
         <Top />
       </div>
+
       <Courses />
       <About />
       <Carousel />
       <Contact />
-      <Subscribe />
-      {/* <Footer /> */}
+      {/* <Subscribe /> */}
+      <Footer />
     </>
   )
 }

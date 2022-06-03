@@ -7,7 +7,7 @@ import img from '../../imgs/course/bg-newletter.webp'
 
 export function Subscribe() {
     return (
-        <div className={`container pt-5 mt-lg`}>
+        <div className={`container pt-5 mt-lg mb-0`}>
             <div className='position-relative col-8 center'>
                 <p className='text-center'>
                     <Image

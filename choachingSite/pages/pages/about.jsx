@@ -4,6 +4,7 @@ import Image from "next/image"
 import history from '../../imgs/about/history.jpg'
 import mission from '../../imgs/about/mission.png'
 import news from '../../imgs/about/news.jpg'
+import { Footer } from "../../components/common/footer"
 
 const data = [
     {
@@ -45,7 +46,7 @@ export default function About() {
             <Navbar className={'bg-lgrey'} />
             <div className="container">
                 <div className="row">
-                    <h1 className="text-serif mt-xl text-center display-3 text-black">About us</h1>
+                    <h1 className="text-serif mt-5 text-center display-3 text-black">About us</h1>
                     <ColImg put={history} />
                     <ColText className={'ps-5'} put={data[0]} />
                     <ColText className={'pe-5'} put={data[1]} />
@@ -54,6 +55,7 @@ export default function About() {
                     <ColText className={'ps-5'} put={data[2]} />
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

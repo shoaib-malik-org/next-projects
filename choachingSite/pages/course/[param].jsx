@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Navbar } from '../../components/common/navbar'
+import { Footer } from '../../components/common/footer'
 import style from '../../styles/course.module.css'
 import { course, course2 } from '../../components/home/courses'
 import { useRouter } from 'next/router'
@@ -55,20 +56,21 @@ export default function Course() {
     return (
         <>
             <Navbar />
-            <div className={`container-fluid ${style.bgHome} ps-0`}>
-                <div className='container px-3'>
-                    <div className='row'>
-                        <h1 className={`display-5 fw-bold text-serif text-light position-relative`}
-                            style={{ marginTop: '200px' }}>
-                            TECHNOLOGY
-                        </h1>
+            <div className={`position-relative`} style={{height:'300px'}}>
+                <div className={`container-fluid ps-0 ${style.bgHome} top-bg-neg position-absolute`}>
+                    <div className='container px-3'>
+                        <div className='row'>
+                            <h1 className={`display-5 fw-bold text-serif text-light position-relative`}
+                                style={{ marginTop: '200px' }}>
+                                TECHNOLOGY
+                            </h1>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className='container px-3 mb-5'>
-
                 <div className='row'>
-                    <h2 className='text-serif mt-5'>{data.title}</h2>
+                    <h2 className='text-serif'>{data.title}</h2>
                     <div className='col-7 '>
                         <div className='col'>
                             <Image
@@ -97,6 +99,7 @@ export default function Course() {
                 </div>
                 <Select />
             </div>
+            <Footer />
         </>
     )
 }
@@ -105,7 +108,7 @@ function Select() {
     var [blue, setBlue] = useState([`${style.borderBlue}`])
     var [para, setPara] = useState(paragraph[0])
     var [imgSrc, setImgSrc] = useState(first.src)
-    console.log(para)
+    // console.log(para)
     return (
         <div className='row mt-5'>
             <div className='col-3 text-sans'>
@@ -176,12 +179,7 @@ function CourseSider(props) {
     console.log(data)
     return (
         <div className='row pt-4 text-sans soloCourses sticky-top'>
-            <div className={`col-6 text-secondary h3 fw-normal bg-lBlue py-2 rounded-2`}>
-                Trainer
-            </div>
-            <div className={`col-6 text-secondary h3 fw-bold bg-lBlue py-2 rounded-2 text-end`}>
-                Mr. Ali Bhai
-            </div>
+
             <div className={`col-6 text-secondary h3 fw-normal mt-2 bg-lBlue py-2 rounded-2`}>
                 Course Fee
             </div>

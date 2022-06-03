@@ -7,7 +7,7 @@ export function Top() {
     return (
         <div className='container position-relative z-10 pt-lg-0 pt-4'>
             <div className='row'>
-                <div className='col-10 mt-xl text-light'>
+                <div className='col-10 mt-5 pt-4 text-light'>
                     <h1 className='display-3 fw-bold text-serif'>
                         The education you want
                     </h1>

@@ -12,7 +12,7 @@ export function Navbar({ className }) {
         text = className + ' ' + style.textDark
     }
     return (
-        <nav className={`w-100 position-absolute ${text}`} style={{ zIndex: '10000' }}>
+        <nav className={`w-100 position-relative ${text}`} style={{ zIndex: '10000' }}>
             <nav className='navbar navbar-expand-lg w-100 z-10 border-bottom border-grey'>
                 <div className='container w-100'>
                     <ul className="py-2 mb-2 mb-lg-0 position-relative row w-100 list-unstyled">
@@ -87,9 +87,6 @@ export function Navbar({ className }) {
                                     </Link>
                                     <Link href={'/pages/portfolio'}>
                                         <a className='px-3 my-2 text-sm d-block'>Portfolio</a>
-                                    </Link>
-                                    <Link href={'/pages/blog'}>
-                                        <a className='px-3 my-2 text-sm d-block'>Blog</a>
                                     </Link>
                                 </div>
                             </li>

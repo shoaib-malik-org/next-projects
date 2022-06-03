@@ -36,7 +36,7 @@ a {
 }
 
 .mt-xl {
-  margin-top: 180px;
+  margin-top: 33vh;
 }
 
 .mt-lg {
@@ -47,14 +47,22 @@ a {
   height: 100vh;
 }
 
-.h-md{
+@media (max-height:510px) {
+  .h-full {
+    height: 500px !important;
+  }
+}
+
+.h-md {
   height: 420px;
 }
 
-.h-smpx{
+.h-smpx {
   height: 200px;
 }
-
+.h-mdpx{
+  height: 300px;
+}
 .center-both {
   padding: 100%;
 }
@@ -110,40 +118,46 @@ a {
   color: #0096db !important;
 }
 
-.bg-blue{
+.bg-blue {
   background-color: #006fa2 !important;
 }
 
-.hr-sm{
+.hr-sm {
   height: 1px !important;
   opacity: 0.1;
 }
 
-.c-pointer{
+.c-pointer {
   cursor: pointer;
 }
+
 @media (max-width: 1199px) {
-  .soloCourses .h3{
+  .soloCourses .h3 {
     font-size: 25px !important;
   }
-  .display-5{
+
+  .display-5 {
     font-size: 3.5vw;
   }
 }
 
-.bg-lBlue{
+.bg-lBlue {
   background-color: #f6f9ff;
 }
-.bg-lgrey{
+
+.bg-lgrey {
   background-color: #f2f2f2 !important;
 }
-.text-purple{
+
+.text-purple {
   color: #012970 !important;
 }
-.lh-md{
+
+.lh-md {
   line-height: 25px !important;
 }
-.mt-10{
+
+.mt-10 {
   margin-top: 100px;
 }
 
@@ -151,10 +165,14 @@ a {
   .home_bgHome__pHp_R .display-3 {
 
     font-size: calc(1.425rem + 2.1vw);
-      font-weight: 300;
-      line-height: 1.2;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
-.text-ldark{
+
+.text-ldark {
   color: rgb(61, 61, 61) !important;
+}
+.top-bg-neg{
+  top: -140px;
 }

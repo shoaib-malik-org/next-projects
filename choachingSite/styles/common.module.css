@@ -7,7 +7,7 @@
     border-color: #5391ae !important;
 }
 
-.textGrey a {
+.textGrey a,.textGrey span {
     color: rgb(235, 235, 235) !important;
 }
 

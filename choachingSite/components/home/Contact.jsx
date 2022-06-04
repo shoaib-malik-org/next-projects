@@ -16,7 +16,7 @@ export function Contact() {
                     <hr className="hr-sm" />
                     <div className="row pt-3">
                         <div className="col">
-                            <Link href="tel:+91 ">
+                            <Link href="tel:+91 9638527410">
                                 <a>
                                     <i className="fa-solid fa-phone-flip fa-xl text-blue"></i>
                                     <h5 className="d-inline text-sans fw-bold ms-3">Phone</h5>
@@ -38,7 +38,7 @@ export function Contact() {
                     </div>
                     <hr className="mt-4 hr-sm" />
                     <div className="col py-3">
-                        <Link href="tel:+91 ">
+                        <Link href="tel:+91 9638527410">
                             <a>
                                 <i className="fa-solid fa-location-dot fa-xl text-blue"></i>
                                 <h5 className="d-inline text-sans fw-bold ms-3">Address</h5>

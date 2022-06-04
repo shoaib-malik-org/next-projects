@@ -16,28 +16,32 @@ export const course = [
         title: 'From Zero to Hero With Basic Computer',
         std: '54',
         comments: '4',
-        price: '5000'
+        price: '5000',
+        alt: `From Zero to Hero With Basic Computer`
     },
     {
         src: soft.src,
         title: 'Learn Python, C, C++, Each',
         std: '20',
         comments: '2',
-        price: '6000'
+        price: '6000',
+        alt: `Learn Python, C, C++, Each`
     },
     {
         src: fullStack.src,
         title: 'Your Complete Guide for Fullstack',
         std: '35',
         comments: '4',
-        price: '18000'
+        price: '18000',
+        alt: `Your Complete Guide for Fullstack`
     },
     {
         src: front.src,
         title: 'Learn Frontend Designing',
         std: '10',
         comments: '1',
-        price: '6000'
+        price: '6000',
+        alt: `Learn Frontend Designing`
     }
 ]
 export const course2 = [
@@ -46,7 +50,8 @@ export const course2 = [
         title: 'Complete Backend Programming',
         std: '9',
         comments: '1',
-        price: '12000'
+        price: '12000',
+        alt: `Complete Backend Programming`
     },
 ]
 
@@ -100,6 +105,7 @@ function Col(props) {
                             src={props.src}
                             height={'200px'}
                             width={'300px'}
+                            alt={props.alt}
                         />
                         <div className="card-body">
                             <h6 className="card-title text-sans fw-bold my-4 col-xl-9 center text-center">

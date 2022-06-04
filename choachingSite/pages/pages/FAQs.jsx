@@ -2,6 +2,7 @@ import { faN } from "@fortawesome/free-solid-svg-icons";
 import { Navbar } from "../../components/common/navbar";
 import style from '../../styles/home.module.css'
 import { Footer } from "../../components/common/footer";
+import Head from "next/head";
 
 
 const arr = [
@@ -18,6 +19,15 @@ const arr2 = [
 export default function faq() {
     return (
         <>
+            <Head>
+                <meta name="keywords" content="Inter Alia Technology,coding classes,coding languages,coding for beginners,learn coding,coding program for middle school,coding for kids,python coding,scratch coding,java coding" />
+                <meta name="author" content="Mohd Ali Nawab" />
+                <meta name="description" content="Inter Alia Technology FAQs Page" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <title>FAQs Page</title>
+            </Head>
             <Navbar className={'bg-lgrey'} />
             <div className="container">
                 <div className="row">

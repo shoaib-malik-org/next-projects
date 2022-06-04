@@ -1,4 +1,4 @@
-
+import Head from "next/head"
 import { Navbar } from "../../components/common/navbar"
 import Image from "next/image"
 import history from '../../imgs/about/history.jpg'
@@ -15,7 +15,8 @@ const data = [
             'animi expedita cumque provident inventore? Voluptatum in tempora earum deleniti,',
         p2: 'Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde' +
             'excepturi dolores quasi eos vero harum ipsa quam laborum illo aut facere' +
-            'voluptates aliquam adipisci sapiente beatae ullam.'
+            'voluptates aliquam adipisci sapiente beatae ullam.',
+        alt: `about the coaching's history`
     },
     {
         h1: 'MISSION & VISION',
@@ -25,7 +26,8 @@ const data = [
             'inventore? Voluptatum in tempora earum deleniti, culpa odit veniam,',
         p2: 'Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde' +
             'excepturi dolores quasi eos vero harum ipsa quam laborum illo aut facere' +
-            'voluptates aliquam adipisci sapiente beatae ullam.'
+            'voluptates aliquam adipisci sapiente beatae ullam.',
+        alt: `about the coaching's mission & vision`
     },
     {
         head: 'Latest News',
@@ -34,7 +36,8 @@ const data = [
             'inventore? Voluptatum in tempora earum deleniti, culpa odit veniam,',
         p2: 'Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde' +
             'excepturi dolores quasi eos vero harum ipsa quam laborum illo aut facere' +
-            'voluptates aliquam adipisci sapiente beatae ullam.'
+            'voluptates aliquam adipisci sapiente beatae ullam.',
+        alt: `about the coaching's latest news`
     },
 ]
 
@@ -43,6 +46,15 @@ const data = [
 export default function About() {
     return (
         <>
+            <Head>
+                <meta name="keywords" content="Inter Alia Technology,coding classes,coding languages,coding for beginners,learn coding,coding program for middle school,coding for kids,python coding,scratch coding,java coding" />
+                <meta name="author" content="Mohd Ali Nawab" />
+                <meta name="description" content="Inter Alia Technology about page" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <title>About</title>
+            </Head>
             <Navbar className={'bg-lgrey'} />
             <div className="container">
                 <div className="row">
@@ -61,12 +73,13 @@ export default function About() {
 }
 
 function ColImg({ put }) {
-    if(put === undefined) return <></>
+    if (put === undefined) return <></>
     return (
         <div className="col-6 position-relative mt-10">
             <Image
                 src={put.src}
                 layout={'fill'}
+                alt={put.alt}
             />
         </div>
     )

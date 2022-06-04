@@ -34,6 +34,7 @@ export function About() {
                     <Image
                         src={about.src}
                         layout={'fill'}
+                        alt={`about image`}
                     />
                 </div>
             </div>

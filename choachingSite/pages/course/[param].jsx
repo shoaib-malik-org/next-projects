@@ -10,6 +10,7 @@ import sec from '../../imgs/course/soloCourse/sec.png'
 import third from '../../imgs/course/soloCourse/third.png'
 import four from '../../imgs/course/soloCourse/four.png'
 import five from '../../imgs/course/soloCourse/five.png'
+import Head from 'next/head'
 
 
 const paragraph = [
@@ -55,8 +56,17 @@ export default function Course() {
     }
     return (
         <>
+            <Head >
+                <meta name="keywords" content="Inter Alia Technology,coding classes,coding languages,coding for beginners,learn coding,coding program for middle school,coding for kids,python coding,scratch coding,java coding" />
+                <meta name="author" content="Mohd Ali Nawab" />
+                <meta name="description" content={`Inter Alia Technology Course of ${param}`} />
+                <title>{param}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            </Head>
             <Navbar />
-            <div className={`position-relative`} style={{height:'300px'}}>
+            <div className={`position-relative`} style={{ height: '300px' }}>
                 <div className={`container-fluid ps-0 ${style.bgHome} top-bg-neg position-absolute`}>
                     <div className='container px-3'>
                         <div className='row'>

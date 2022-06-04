@@ -41,7 +41,13 @@ export function Navbar({ className }) {
                         <a className="navbar-brand c-pointer">
                             <div className='row '>
                                 <div className='col'>
-                                    <Image alt='choaching logo' src={logo.src} height={'48px'} width={'48px'} className={`bg-light rounded-circle`} />
+                                    <Image
+                                        alt='choaching logo'
+                                        src={logo.src}
+                                        height={'48px'}
+                                        width={'48px'}
+                                        className={`bg-light rounded-circle`}
+                                    />
                                 </div>
                                 <div className='col px-0 text-serif'>
                                     <span className='fw-bold position-relative'>Inter Alia
@@ -67,20 +73,20 @@ export function Navbar({ className }) {
                                 </Link>
                             </li>
                             <li className={`nav-item`}>
-                                <Link href={`/#courses`}>
+                                <Link href={`/courses`}>
                                     <a className="nav-link me-4">
                                         Courses
                                     </a>
                                 </Link>
                             </li>
                             <li className={`nav-item position-relative`}>
-                                <a className={`nav-link me-4 ${style.dropDown}`} onClick={() => {
+                                <span className={`nav-link me-4 ${style.dropDown}`} onClick={() => {
                                     if (disp === 'block') setDisp('')
                                     else setDisp('block')
                                 }}>
                                     Features
                                     <i className="fa-solid fa-angle-down ms-2 fa-sm"></i>
-                                </a>
+                                </span>
                                 <div className={`py-2 position-absolute rounded-3 bg-white shadow ${style.dropDiv} w-100`} style={{ display: disp }}>
                                     <Link href={'/pages/FAQs'}>
                                         <a className='px-3 my-2 text-sm d-block'>FAQs</a>

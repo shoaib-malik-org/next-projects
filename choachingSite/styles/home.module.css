@@ -18,8 +18,6 @@
     background-image: url('../imgs/home.jpg');
 }
 
-
-
 .bgTestimonial {
     background-image: url('../imgs/testimonials-bg.jpg');
     background-attachment: fixed;
@@ -45,6 +43,17 @@
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-height:510px) {
+    .bgHome::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: 550px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
 }
 
 .CarouselEnd,

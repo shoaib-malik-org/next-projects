@@ -12,18 +12,19 @@ import five from '../../imgs/portfolio/firve.jpg'
 import six from '../../imgs/portfolio/six.jpg'
 import seven from '../../imgs/portfolio/seven.jpg'
 import eight from '../../imgs/portfolio/eight.jpg'
+import Head from "next/head";
 
 
 
 const data = [
-    { src: first.src, title: 'startup team' },
-    { src: sec.src, title: 'Soft skills' },
-    { src: third.src, title: 'Open books' },
-    { src: four.src, title: 'Up your skills' },
-    { src: five.src, title: 'Reading glasses' },
-    { src: six.src, title: 'Design' },
-    { src: seven.src, title: 'Reading Books' },
-    { src: eight.src, title: 'Electronic book' },
+    { src: first.src, title: 'startup team', alt: `Startup team` },
+    { src: sec.src, title: 'Soft skills', alt: `Soft skills` },
+    { src: third.src, title: 'Open books', alt: `open books` },
+    { src: four.src, title: 'Up your skills', alt: `Up your skills` },
+    { src: five.src, title: 'Reading glasses', alt: `Reading glasses` },
+    { src: six.src, title: 'Design', alt: `Portfolio design` },
+    { src: seven.src, title: 'Reading Books', alt: `Reading Books` },
+    { src: eight.src, title: 'Electronic book', alt: `Electronic book` },
 ]
 
 
@@ -33,6 +34,15 @@ export default function Portfolio() {
     var [color, setColor] = useState(['text-blue'])
     return (
         <>
+            <Head>
+                <meta name="keywords" content="Inter Alia Technology,coding classes,coding languages,coding for beginners,learn coding,coding program for middle school,coding for kids,python coding,scratch coding,java coding" />
+                <meta name="author" content="Mohd Ali Nawab" />
+                <meta name="description" content="Inter Alia Technology Portfolio Page" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <title>Portfolio</title>
+            </Head>
             <Navbar className={'bg-lgrey'} />
             <div className="container">
                 <div className="row">
@@ -51,21 +61,21 @@ export default function Portfolio() {
                         <button className={`btn ${color[1]}`} onClick={
                             () => {
                                 setColor(['', 'text-blue'])
-                                setShow([data[0],data[1],data[4],data[5]])
+                                setShow([data[0], data[1], data[4], data[5]])
                             }}
-                        >PRESENTATION</button>
+                        >Ecommerce</button>
                         <button className={`btn ${color[2]}`} onClick={
                             () => {
                                 setColor(['', '', 'text-blue'])
-                                setShow([data[0],data[4],data[2]])
+                                setShow([data[0], data[4], data[2]])
                             }}
-                        >COURSES</button>
+                        >portfio</button>
                         <button className={`btn ${color[3]}`} onClick={
                             () => {
                                 setColor(['', '', '', 'text-blue'])
-                                setShow([data[2],data[6],data[7]])
+                                setShow([data[2], data[6], data[7]])
                             }}
-                        >BOOKS</button>
+                        >Managements</button>
                     </div>
                 </div>
                 <div className="container mt-10">
@@ -80,6 +90,7 @@ export default function Portfolio() {
 }
 
 function Photos(value) {
+    var [check, setCheck] = useState('')
     return (
         <div className="col-4 position-relative" key={value.src}>
             <div className={`col-12 position-relative h-mdpx mb-4 ${style.ImgHover}`}>
@@ -87,6 +98,7 @@ function Photos(value) {
                     src={value.src}
                     layout={'fill'}
                     className={`rounded-3`}
+                    alt={value.alt}
                 />
                 <h5 className={`position-absolute z-10 text-light text-serif ${style.absoluteCenter}`}>{value.title}</h5>
             </div>
